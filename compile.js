@@ -1,7 +1,9 @@
 const ts = require('typescript')
 const fs = require('fs')
 
-const jsconfig = require('./jsconfig.json')
+const { GITHUB_WORKSPACE } = process.env
+
+const jsconfig = require(`${GITHUB_WORKSPACE}/jsconfig.json`)
 
 /**
  * Returns all files within the folder excep . folders and node_modules
