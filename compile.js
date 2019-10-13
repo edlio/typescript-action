@@ -91,8 +91,8 @@ function compile(fileNames, options) {
 
       annotations.push({
         path,
-        start_line: line,
-        end_line: line,
+        start_line: line + 1,
+        end_line: line + 1,
         annotation_level: 'failure',
         message: `${message}`
       })
