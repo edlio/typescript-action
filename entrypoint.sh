@@ -4,7 +4,7 @@ set -e
 
 npm install --no-package-lock
 
-npm install -g typescript
+npm install typescript
 
 # tsc --project jsconfig.json
 
