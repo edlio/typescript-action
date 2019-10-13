@@ -9,4 +9,4 @@ npm install typescript
 # tsc --project jsconfig.json
 
 pwd
-node /action/compile.js
+NODE_PATH=node_modules node /action/compile.js
