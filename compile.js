@@ -85,11 +85,9 @@ function compile(fileNames, options) {
         "\n"
       );
 
-      console.log(
-        `${diagnostic.file.fileName} (${line + 1},${character + 1}): ${message}`
-      );
+      const path = diagnostic.file.fileName.replace(GITHUB_WORKSPACE+"/", '')
 
-      const path = diagnostic.file.fileName.substring(GITHUB_WORKSPACE.length + 1)
+      console.log(`${path} (${line + 1},${character + 1}): ${message}`);
 
       annotations.push({
         path,
